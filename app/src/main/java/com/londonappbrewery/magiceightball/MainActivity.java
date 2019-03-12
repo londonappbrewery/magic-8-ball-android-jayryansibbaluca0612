@@ -19,7 +19,7 @@ public class MainActivity extends AppCompatActivity {
         Button RollButton;
         RollButton =(Button) findViewById(R.id.Ask_Button);
 
-        final ImageView ball1 = (ImageView) findViewById(R.id.Ball_1);
+        final ImageView Ball_Display = (ImageView) findViewById(R.id.Ball_1);
 
         final int[] ballArray = {R.drawable.ball1,
                 R.drawable.ball2,
@@ -39,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
 
                 Log.d("Magic 8 Ball", "The random number is: " + number);
 
-                ball1.setImageResource(ballArray[number]);
+                Ball_Display.setImageResource(ballArray[number]);
             }
         });
     }
